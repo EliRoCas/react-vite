@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>¡Hola, desde React!</h1>
+      <h1>¡Hola, desde Vite + React!</h1>
       <div className='container'>
 
         {languagesList}
