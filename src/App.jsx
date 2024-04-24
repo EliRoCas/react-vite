@@ -1,34 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Card from './components/CardComponent'
+import languages from './data/languages'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  //Se crea una función que recorra el arreglo de lenguajes uno a uno
+  // Lleva dos parámetros, "l" que es el contador e "index" que es el iterador 
+  const languagesList = languages.map((l, index) => {
+    return <Card key={index} title={l.ntitle} description={l.ndescription} />
+  })
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='app'>
+      <h1>¡Hola, desde React!</h1>
+      <div className='container'>
+
+        {languagesList}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
