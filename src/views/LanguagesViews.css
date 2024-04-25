@@ -1,0 +1,9 @@
+.langViews {
+    max-width: 30rem;
+    margin: auto;
+    text-align: center;
+}
+
+.langViews img {
+    max-width: 10rem;
+}

@@ -1,7 +1,8 @@
 
 import './App.css'
 import Card from './components/CardComponent'
-import languages from './data/languages'
+import languages from './data/languages' 
+
 
 
 function App() {

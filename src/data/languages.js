@@ -17,9 +17,9 @@ const languages = [
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/300px-PHP-logo.svg.png"
     },
     {
-        ntitle: "C#",
+        ntitle: "Csharp",
         ndescription: "Es un lenguaje de programación multiplataforma en la POO",
-        image: "https://thinkotb.b-cdn.net/wp-content/uploads/2023/01/c-4.svg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/480px-C_Sharp_Logo_2023.svg.png"
     },
     {
         ntitle: "Angular",
