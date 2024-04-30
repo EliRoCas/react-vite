@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import languages from './data/languages.js'
+import engineers from './data/engineers.js'
 
 // Se importa router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -10,6 +11,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // Se importa "LanguagesViews"
 import LanguagesViews from './views/LanguagesViews.jsx'
 
+// Se importa "EngineersViews"
+import EngineersView from './views/EngineersView.jsx'
 
 const router = [
   {
@@ -22,6 +25,14 @@ languages.forEach((lang) => {
   router.push({
     path: lang.ntitle,
     element: <LanguagesViews lang={lang} />,
+  });
+});
+
+
+engineers.forEach((engi) => {
+  router.push({
+    path: engi.nname,
+    element: <EngineersView engi={engi} />,
   });
 });
 

@@ -1,0 +1,11 @@
+.engineer {
+    width: 18rem;
+    border-radius: 2rem;
+    background-color: rgb(144, 196, 60);
+    box-shadow: 1rem 1rem 3rem rgb(186, 187, 185);
+    padding: rem;
+    text-align: center;
+    border: 1rem rgb(80, 115, 98);
+    color: rgb(0, 0, 0);
+
+}

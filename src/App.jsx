@@ -2,6 +2,8 @@
 import './App.css'
 import Card from './components/CardComponent'
 import languages from './data/languages' 
+import Engineer from './components/EngineersComp'
+import engineers from './data/engineers'
 
 
 
@@ -10,7 +12,12 @@ function App() {
   // Lleva dos parámetros, "l" que es el contador donde se almacena cada iteracion e "index" que es el iterador 
   const languagesList = languages.map((l, index) => {
     return <Card key={index} title={l.ntitle} description={l.ndescription} />
+  });
+
+  const engiList = engineers.map((i, index) => {
+    return <Engineer key={index} name={i.nname} degree={i.ndegree} description={i.ndescription} />
   })
+
 
   return (
     <div className='app'>
@@ -18,9 +25,12 @@ function App() {
       <div className='container'>
 
         {languagesList}
+        {engiList}
       </div>
     </div>
   )
 }
+
+
 
 export default App
